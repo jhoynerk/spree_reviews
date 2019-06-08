@@ -19,27 +19,6 @@
 			</div>
 		</div>
 
-		<div class="seven columns">
-			<div class="field">
-				<%= label_tag nil, Spree.t(:title) -%><br/>
-				<%= f.text_field :title_cont, :size => 25  -%>
-			</div>
-		</div>
-
-		<div class="four columns">
-			<div class="field">
-				<%= label_tag nil, Spree.t(:review) -%><br/>
-				<%= f.text_field :review_cont, :size => 25  -%>
-			</div>
-		</div>
-
-		<div class="two columns omega">
-			<div class="field">
-				<%= label_tag nil, Spree.t(:approval_status)-%><br/>
-				<%= f.select :approved_eq, [[Spree.t('all'), nil], [Spree.t('approved_reviews'), true], [Spree.t('unapproved_reviews'), false]]  -%>
-			</div>
-		</div>
-
 		<div class="clear"></div>
 
 		<div class="form-buttons actions filter-actions" data-hook="admin_reviews_index_search_buttons">
